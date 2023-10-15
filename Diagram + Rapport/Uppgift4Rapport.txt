@@ -1,0 +1,25 @@
+Inlämningsrapport Axel Nyberg Prog22
+
+Jag har byggt tre program med uppgift att generera spontan väderdata
+och sedan distrubera det till uppkopplade klienter för att simulera
+en väderapp, såsom Yr till exempel. Kommunikationen mellan dessa program
+sker med SignalR över HTTPS.
+
+Program 1:
+En konsollapplikation vars uppgift är att generera spontan väderdata
+efter ett objekt med properties: Dagens datum, temperatur och summering.
+När ett spontant värde på temperaturen har satts mellan -20 och 35 grader
+så serialiserar den objektet, sedan krypterar och skickar iväg det till
+servern. Detta sker var femte sekund.
+
+Program 2:
+Ett web API som agerar som min server/hub som tar emot objekt skickade
+från program 1, dekrypterar det, sedan omvandlar det tillbaka till ett
+objekt utifrån hur vädermodellen ser ut. Sedan, om allt går rätt till
+så skickar den iväg objektet till alla uppkopplade klienter.
+
+Program 3:
+En web app som har i uppgift att ta emot väderobjektet, och visa upp
+värdena inuti på en hemsida i form av ett nytt list-objekt. 
+Detta sker varje gång servern får någonting från program 1, 
+så var femte sekund.

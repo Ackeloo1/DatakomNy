@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TempGenerator",
+    "\\TempSignalRServer",
+    "\\TempSignalRServer\\Hubs",
+    "\\TempSimulator",
+    "\\TempSimulator\\Models",
+    "\\TempSimulator\\wwwroot",
+    "\\TempSimulator\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\TempSimulator\\appsettings.Development.json",
+  "PreviewInSolutionExplorer": false
+}
